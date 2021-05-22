@@ -19,7 +19,7 @@ song_list = []
 def get_list():
 
     music_directory = playlist.get_file_list()
-    utils.addon_log(const.debug, music_directory)
+    #utils.addon_log(const.debug, music_directory)
     if len(music_directory):
 
 
