@@ -21,10 +21,5 @@ addonProfilePath = xbmc.translatePath(ADDON.getAddonInfo('profile')).decode('utf
 # Resolves path to where plugin i located
 addonPath = xbmc.translatePath(ADDON.getAddonInfo('path')).decode('utf-8')
 
+valid_music_ext = ['.mp3','.aac','.wav','.flac','.wma','.ogg']
 
-# name of the caching file
-cacheChannels = "cacheChannels.json"
-
-
-# Various constants used throughout the script
-HANDLE = int(sys.argv[1])

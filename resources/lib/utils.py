@@ -20,3 +20,9 @@ def addon_log(debug, string):
             print_exc()
 
 
+
+def get_random_thumb():
+    import random
+    mediapath = os.path.join(const.addonPath, "resources", "media", "{}.png".format(random.randint(1, 27)))
+    return mediapath
+
