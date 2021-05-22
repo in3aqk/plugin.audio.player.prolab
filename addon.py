@@ -1,9 +1,14 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 
 #https://kodi.wiki/view/HOW-TO:Audio_addon
 #https://github.com/zag2me/plugin.audio.example/blob/master/default.py
+
+#from __future__ import absolute_import, division, unicode_literals
+#from future import standard_library
+#from future.builtins import *
+#standard_library.install_aliases()
 
 import xbmc
 import xbmcplugin
@@ -19,7 +24,7 @@ song_list = []
 def get_list():
 
     music_directory = playlist.get_file_list()
-    #utils.addon_log(const.debug, music_directory)
+
     if len(music_directory):
 
 
@@ -63,6 +68,8 @@ def main():
 
 
 if __name__ == '__main__':
+    print("ddd")
+    utils.addon_log(const.debug, sys.version)
     addon_handle = int(sys.argv[1])
     main()
 

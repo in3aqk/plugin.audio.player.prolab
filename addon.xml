@@ -4,7 +4,7 @@
        version="1.0.0"
        provider-name="Prolab S.r.l">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="xbmc.python" version="2.2.6"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>audio</provides>
